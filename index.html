@@ -1,0 +1,58 @@
+
+
+<!--Ensure Internet or wi-fi connectivity for accessing all features of this web page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Math</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">      <!--Using Integral icons created by IconsBox - Flaticon-->
+    <script src="https://www.desmos.com/api/v1.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>  <!--Desmos api linked.-->
+</head>
+<body>
+    <form> 
+    <div class="outer">        <!--Div for containing expression calci,graph section-->
+    <div class="box">          <!--Div for expression calci section-->
+    <div class ="func">        <!--Div containing dropdown menu for choosing function-->
+        <p style="color:#fffcf2;background-color:#f4acb7;width:22vh;border-radius: 0.2rem;"> Expression Calci: </p>
+    <label for="Opers"> Operation:</label>
+    <select name="Opers" id="Opers">        <!--Function selected is stored with id opers(Operator Selected)-->
+    </select>
+    </div>
+
+    <div class="expr">          <!--Div for user input expression-->
+    <label for="Exp">Enter Expression:</label>
+    <input  value="x^3+1" type="text" id="Exp" name="Exp">   <!--Filled with reference value-->
+    </div>
+    <img  style="margin-left: 10vmin; margin-top: 2vmin;" src="func_icon.png">    <!--A descriptive icon :  Math icons created by Freepik - Flaticon--> 
+    <button id="calci">SOLVE</button>
+    <div class="answer"> </div>            <!--Div for showing answer of Expression-Calci ,visible on clicking SOLVE-->
+    </div>
+    <div id="calculator" style="width: 90vh; height: 60vh;color:#fffcf2;background-color:#f4acb7;font-size: 4vmin;border-radius: 0.5rem;">Graph Section: </div>  <!--Div for graph api-->
+    </div>
+    <div class="trig">                <!--Div that contains trigonometric,logarithmic,hyperbolic calculations -->
+        <div class="heading">         <!--Div for heading of trigonometric section-->
+        <img  style="margin-top:2vmin ;"src="trig_icon.png">  <!--Icon for Interface appeal, Trigonometry icons created by Freepik - Flaticon -->
+        <p style="color:#fffcf2;background-color:#f4acb7;width:35vh;border-radius: 0.4rem;height:6vh;line-height:3vh;margin-top: 1.5vh;"> Trigonometric & Hyperbolic & Logarithmic Section:</p> <!--Heading for Trigonometric section-->
+        </div>
+        <label for="Trig">Value: (if angle use deg)</label>
+        <input  value="90" type="text" id="Trig" name="Trig">   <!--User input box with id Trig-->
+    </div>
+
+    <div class="trifs">             <!--Div for choosing required  function-->
+        <label for="Trif">Function:</label>
+    <select name="Trif" id="Trif">     <!--Selected Function is stored with id Trif(Trigonometric Function)-->
+    </select>
+    <div class="user_Func">           <!--Two button(GO,help) elements are combinely stored in a div to place them on same horizontal line.-->
+    <button id="eval">GO</button>
+
+    <button id="help" ><img src="help_icon.png"></button>   <!--button that leads to Support page,Help icons created by Freepik - Flaticon-->
+    </div>
+    <div class="trig_Ans"></div> <!--Div  that contains trigonometric,hyperbolic,logarithmic section answer -->
+    </div>
+    </form>
+    <link rel="stylesheet" href="style.css">       <!--CSS file linked-->
+</body>
+ <script src="script.js"></script>               <!--Javascript file linked-->
+</html>
