@@ -1,0 +1,74 @@
+
+<!--Why use of css block in this file itself? This Support-page(help_page.html) is a small page hence it's css is included here only-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support-Page:</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">  <!--Same favicon added as of index.html-->
+    <script src="script.js"></script>    <!--Same Javascript code linked script.js-->
+    <style>
+      body{   background : url('background_help_page.jpg') no-repeat; }  /*background image set to page*/
+      h4 {                           /*Heading for support page*/
+         color:white;
+         font-size: 3vmin;
+         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h3{                          /*Remaining sub-headings but more important than main heading for users*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    .in_sheet{                       /*Inner box arrangement and styling*/
+    height: 87vh;
+    width:150vh;
+    border-radius: 1rem; 
+    border:2px solid rgba(255,255,255,.9);
+    backdrop-filter: blur(30px);
+    margin-left: 30vh;
+    }
+    .out_sheet{                   /*Outer box is created for ensuring placin of inner box in the middleof the page*/ 
+      text-align: center;
+      align-items: center;        /*To ensure inner box is placed at mid-page*/
+      height:100vh;
+      width:200vh;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    p{                          /*All points  written in paragraph*/
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+   
+    </style>
+</head>
+<body>
+    <div  class="out_sheet">      <!-- Div(outer box) that contains inner box(div) -->
+    <div  class ="in_sheet">      <!--Div for containing USER-NOTES-->
+    <h4><strong><u>NOTES</u></strong></h4>  <!--Just heading for reference box-->
+        <h3>Description:</h3>                <!--More imp headings to help  user understanding of NOTES -->
+        <p>Expression calci is provided for calculus related calculations.
+            <br>
+        Section for trigonometric,hyperbolic,logarithmic calculation is provided for respective functional output for given value.
+        <br>
+        Graph section is provided for view of functions and thier gradients for better understanding.</p>
+<!--General description ended now how-to-use and remarks section are dispalyed-->
+        <h3>How-to-use:</h3>
+        <p>Expression-Calci: Choose function from drop-down,input equation in provided white space and click SOLVE.</p>
+        <p>The graph section,Expression-Calci is enabled only on active internet or wi-fi connection.</p>
+        <dl>
+        <dt style="font-family: Arial, Helvetica, sans-serif;">Graph section working:</dt>
+            <dd> <li> Enter equations in the left-white space provided in graph-section.</li> 
+                <li>Diagrams of equations will be displayed(can be zoomed using touch-pad or mouse).</li> 
+            </dd>
+        </dl>
+        </p>
+        <p>Trigonometric-Section:   For calculation of trigonometric functions angle must be provided in degrees.</p>
+        <p>After entering value and selecting function click on GO button for answer display.</p>
+        <h3>Remarks:</h3>          <!--Incase of any errors or misunderstanding of answers, a guide in that case-->
+        <p>For smaller trigonometric angles there is very higher accuracy in answer. eg.10^-17 for cos(90deg)</p>
+        <p>Answer provided for inverse trigonometric functions is in degrees.</p>
+        <p>Integration of some complex functions is not supported by our calculator.</p>
+        <p>In Expression-calci zeroes(roots) of equations which are not real are generally rounded off(to real integers) or not displayed, in that case use graph section to view diagram of equation to verify number,existence of real roots.
+    </div>
+    </div>
+</body>
+</html>
