@@ -1,0 +1,162 @@
+
+
+*{                               /*General outlet of page*/
+    margin:0;
+    padding: 0;         
+}
+ body{                                                     
+  background: linear-gradient(to right,#17c392, #40e0d0) ; /*Linear gradient for body background*/ 
+  height:auto;
+  width:auto;
+} 
+button{                                               /*SOLVE button styling*/
+    margin-left: 37vh;
+    background-color:rgb(6, 241, 217);
+    height:4vh;
+    width:8vh;
+    border-radius: 0.5vh;
+    border:none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+    color:white;
+}
+.outer{                                              /*Outer div containing Expression-Calci and graph-section*/
+    padding-top: 5vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center ;
+    gap : 15vh;
+}
+.box{                                               /*Expression-Calci section*/
+    background:transparent; 
+    flex-wrap: wrap;
+    align-items: center;
+    height: 47.2vh;
+    width:52vh;
+    border-radius: 1rem; 
+    border:2px solid rgba(255,255,255,.6);
+    backdrop-filter: blur(40px);
+    display: flex;
+}
+.func{                                           /*Class for selecting function of expression-calci*/
+    margin-top: 1vh ;
+    margin-left: 2vh ;
+    cursor:pointer;
+    border-radius: 0.5rem;
+    border:none;
+    width:30vmin; 
+    height:11vmin;
+    border-radius: 1rem; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vmin;
+    color: white;
+}
+.expr{                                               /*Class for user input expression*/
+    margin-top: 1vh ;
+    margin-left: 20vh ;
+    cursor:pointer;
+    border-radius: 0.5rem;
+    border:none;
+    width:30vmin; 
+    height:12vmin;
+    border-radius: 1rem; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vmin;
+    color: white;
+}
+.answer{                                              /*Expression-Calci answer*/
+    width:30vh;
+    height:5vh;
+    color: white;
+    font-size: 3vmin;
+    margin-left: 3vmin;
+} 
+#Exp{                                               /*box for user input expression*/
+   border-radius: 0.25rem;
+   height:5vmin;
+   width:20vmin;
+   border:2px solid rgba(255,255,255,.8);
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 3vmin;
+}
+#Opers{                                             /*box for selected function*/
+   border-radius: 0.25rem;
+   height:4.5vmin;
+   width:20vmin;
+   border:2px solid rgba(255,255,255,.6);
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 3vmin;
+}
+.trig{                                             /*Class for selecting value*/
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3vmin;
+    width:35vh;
+    margin-left: 25vmin;
+    display: flex;
+}
+#Trig{                                           /*Box for user input value*/
+    border-radius: 0.15rem; 
+    width:10vmin;
+    height:3vmin;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vmin;
+    border:none;
+    margin-left: 10vmin;
+}
+.trifs{                                           /*Class for trigonometric,hyperbolic,logarithmic function*/
+    margin-left: 2vh ;
+    cursor:pointer;
+    border:none;
+    width:30vmin; 
+    height:7vmin; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vmin;
+    color: white; 
+    margin-left: 25vmin;
+    flex-wrap: wrap;
+}
+#Trif{                                             /*Input box for trigonometric,hyperbolic,logarithmic function*/
+    margin-left: 2vmin;
+    border-radius: 0.25rem;
+    height:4vmin;
+    width:20vmin;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vmin; 
+    border:none;
+}
+#eval{                                                /*Button for Trigonometric section*/
+    margin-top: 1vh;;
+    margin-left: 7vh;
+    background-color:rgb(15, 191, 211);
+    height:4vh;
+    width:15vh;
+    border-radius:0.25rem;
+    border:none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size: medium;
+} 
+.trig_Ans{                                          /*Answer of trigonometric section*/
+    visibility: hidden;
+    width:35vh;
+    height:7vh;
+    background-color:#f4acb7;
+    border-radius: 0.5rem;
+}
+.heading{                                              /*Heading of trigonometric section*/
+    display: flex;
+    gap:1vmin;
+}
+#help{                                              /*help button*/
+    width:5vmin;
+    height:5vmin;
+    border-radius: 2.5vmin;
+}
+.user_Func{                                    /*div to arrange GO,help buttons in same line for user-interface look*/
+    display: flex;
+    gap:110vh;
+}
